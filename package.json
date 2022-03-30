@@ -1,0 +1,24 @@
+{
+  "name": "pugging",
+  "version": "1.0.0",
+  "description": "Trying pug",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vimal704/pug_use.git"
+  },
+  "author": "coder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vimal704/pug_use/issues"
+  },
+  "homepage": "https://github.com/Vimal704/pug_use#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}

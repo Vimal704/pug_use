@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title SBI-payment Gateway
+  style 
+    include ../static/style.css
+a(href='https://www.onlinesbi.com/')
+  img(src='sbilogo.png' alt='SBI-Logo' height='64' width='115')
+h1
+  i Welcome to State Bank of India payment gateway
+hr
+marquee(behavior='scroll' scrollamount='10' sc='' direction='left' style='color: blue;')
+  h1
+    e We steal your information :)
+    br
+hr
+p Required fields are followed by *
+form(action='')
+  fieldset
+    // used to make box
+    legend
+      h3
+        b
+          i Contact Information
+    p
+      | Name*: 
+      input(type='text' name='myname' required='' placeholder='Name')
+    p
+      | Gender*: 
+      | Male
+      input(type='Radio' name='gender' required='')
+      |         Female 
+      input(type='Radio' name='gender' required='')
+      |         Others 
+      input(type='Radio' name='gender' required='')
+    p
+      | Address: 
+      textarea(name='add' id='' cols='30' rows='10')
+    p
+      | Email Id*: 
+      input(type='email' name='email' required='')
+    p
+      | Pincode*: 
+      input(type='number' name='pincode' required='')
+  fieldset
+    legend
+      h3
+        b
+          i Payment Information
+    p
+      | Card Type: 
+      select(name='card' id='')
+        option(value='') --Select a card type--
+        option(value='') Visa
+        option(value='') MasterCard
+        option(value='') Rupay
+        option(value='') 4th option 
+    p
+      | Card Number*: 
+      input(type='number' name='cno' required='' placeholder="XXXX-XXXX-XXXX-XXXX")
+    p
+      | Expiration Date*: 
+      input(type='Date' name='date' required='')
+    p
+      | CVV*: 
+      input(type='number' required='' name='cvv')
+  button
+    | Submit
